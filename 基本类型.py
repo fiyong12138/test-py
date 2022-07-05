@@ -1,0 +1,78 @@
+#注释1
+'''注释3'''
+"""注释2"""
+
+from tkinter import W
+
+
+print("helloword!")
+
+if True:    #首字母大写才为真
+    print ("true")
+  #print("true")    同一个代码块的语句必须包含相同的缩进空格数
+else:
+    print("false")  
+
+num=1+2+\
+    3   #用\实现多行        变量没有类型    所存对象才有类型
+num1=[1,2,4,     #但【】 {} （）可直接多行
+      4,6,7]
+a=b=c=1 #多个赋值
+
+word='单引号和双引号没有区别'
+words="""
+    用来定义多行字符串
+      """
+print('this is a line\n')
+print(r'this is a line\n')  #r让反斜杠不发生转义
+
+print(word[2:])#输出第三个开始到最后  -1为倒数第二个
+print(word*2+'123') #   * 输出2次 +连接字符串
+
+print(word[::2])    #输出全部 步进2
+print(word[-1::-2])     #倒序输出 步进2
+num1[3]='a'   #修改列表
+print(num1)
+num1[1:4:2]='14'    #连续修改
+print(num1)
+
+""" 列表的内置方法
+l=[]
+添加方法：append、insert和extend
+l.append((‘Jerry‘,5))
+l.insert(2, ‘哈喽‘)
+l.extend([‘Lily‘, False, (234, 567)])需要传入一个可遍历对象(list、tuple或字符串等)
+
+删除方法：clear、pop和remove
+l.clear() 清空列表
+v1 = l.pop()  默认弹出最后一个
+l.remove(‘haha‘) 参数为要删的对象
+
+其他方法：cpoy、count、index、sort
+v = l.copy() 浅拷贝
+v = l.count(True)计算某个元素在列表中出现的次数
+v = l.index(True,3,8) 从第3个到第8个查找True
+l.sort()  同类型元素按ascii码值排序
+l.sort(key = lambda x: x.lower()) 使用key来指定一个按照每个元素的小写字母进行排序
+lambda  行内匿名简单函数
+l_tuple = [(‘haha‘, 23), (‘yuyu‘, 15), (‘oiui‘, 32), (‘erer‘, 53)]
+
+l_tuple.sort(key=lambda x: x[1], reverse=True)
+
+print(l_tuple)
+
+打印结果：
+
+[(‘erer‘, 53), (‘oiui‘, 32), (‘haha‘, 23), (‘yuyu‘, 15)]
+"""
+tuple = ( 'abcd', 786 , 2.23, 'runoob', 70.2  )  #元组可以为空 且不能进行元素修改 
+
+
+
+#input("\n\n 按下回车退出") #在输入前打印“”内字符 然后等待输入
+#一行内写多个语句时 用；隔开
+print(num,end="") #输出后不换行
+
+
+
+
