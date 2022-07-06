@@ -114,16 +114,41 @@ print("--------------------Python3 数据类型转换-------------")
 x=1+1.2 #x输出结果为2.2 隐式转换
 y = int(2.8) # y 输出结果为 2 显式类型转换
 z = int("3") # z 输出结果为 3
+z = float("3")   # z 输出结果为 3.0
+x = str("s1") # x 输出结果为 's1'
+"""
+complex(real [,imag])   创建一个复数
+repr(x)     将对象 x 转换为表达式字符串
+eval(str)   用来计算在字符串中的有效Python表达式,并返回一个对象
+tuple(s)    将序列 s 转换为一个元组
+list(s)     将序列 s 转换为一个列表
+frozenset(s)    转换为不可变集合
+chr(x)      将一个整数转换为一个字符
+ord(x)      将一个字符转换为它的整数值
+hex(x)      将一个整数转换为一个十六进制字符串
+oct(x)      将一个整数转换为一个八进制字符串
+"""
 
+print('-----python3 推导式------------')
+#列表(list)推导式|字典(dict)推导式|集合(set)推导式|元组(tuple)推导式
 
+#列表(list)推导式
+#1、过滤掉长度小于或等于3的字符串列表，并将剩下的转换成大写字母
+names = ['Bob','Tom','alice','Jerry','Wendy','Smith']
+new_names = [name.upper()for name in names if len(name)>3]
+print(new_names)
+#['ALICE', 'JERRY', 'WENDY', 'SMITH']
 
+#2计算 30 以内可以被 3 整除的整数
+multiples = [i for i in range(30) if i % 3 == 0]
+print(multiples)
+#[0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 
-
-
-
-
-
-
-
+#字典(dict)推导式
+#1、 将列表中各字符串值为键，各字符串的长度为值，组成键值对
+listdemo=['google','runoob','baidu']
+newdict={key:len(key) for key in listdemo}
+print(newdict)
+#{'Google': 6, 'Runoob': 6, 'baidu': 5}
 
 
