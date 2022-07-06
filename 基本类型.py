@@ -66,6 +66,12 @@ print(l_tuple)
 [(‘erer‘, 53), (‘oiui‘, 32), (‘haha‘, 23), (‘yuyu‘, 15)]
 """
 tuple = ( 'abcd', 786 , 2.23, 'runoob', 70.2  )  #元组可以为空 且不能进行元素修改 
+#tuple的元素不可改变，但它可以包含可变的对象，比如list列表
+tup1 = ()    # 空元组
+tup2 = (20,) # 一个元素，需要在元素后添加逗号
+#string、list 和 tuple 都属于 sequence（序列）。
+
+
 
 
 
