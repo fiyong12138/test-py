@@ -71,6 +71,30 @@ tup1 = ()    # 空元组
 tup2 = (20,) # 一个元素，需要在元素后添加逗号
 #string、list 和 tuple 都属于 sequence（序列）。
 
+a = set('abracadabra')
+b = set('alacazam')
+print('-----集合使用大括号 { } 或者 set() 函数---集合在Python内部通过哈希表实现，其本征无序-----')
+print(a)# 输出集合，重复的元素被自动去掉
+# set可以进行集合运算  
+print(a - b)     # a 和 b 的差集
+print(a | b)     # a 和 b 的并集
+print(a & b)     # a 和 b 的交集
+print(a ^ b)     # a 和 b 中不同时存在的元素
+
+print('-----列表有序---字典无序，用键来存取-------')
+dict = {}
+dict['one'] = "1 - 菜鸟教程"
+dict[2]     = "2 - 菜鸟工具"
+tinydict = {'name': 'runoob','code':1, 'site': 'www.runoob.com'}
+print (dict['one'])       # 输出键为 'one' 的值
+print (dict[2])           # 输出键为 2 的值
+print (tinydict)          # 输出完整的字典
+print (tinydict.keys())   # 输出所有键
+print (tinydict.values()) # 输出所有值
+
+
+
+
 
 
 
